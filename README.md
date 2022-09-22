@@ -86,24 +86,3 @@ Install jaxlib (note that the command you need to run may differ depending on yo
 pip install --upgrade jaxlib==0.3.2+cuda11.cudnn805 -f https://storage.googleapis.com/jax-releases/jax_releases.html
 ```
 
-## TODO
-- [ ] Add other models
-  - [ ] UNet (attention)
-  - [ ] Something convolutional / transposed convolutional
-  - [ ] Fourier features?
-  - [ ] Any other tweaks needed to reach the current state of the art.
-    - https://github.com/nv-tlabs/CLD-SGM/tree/87d77220aab848db280852c2df786307d95cc598/configs
-    - Appendix H of Yang Song's paper
-    - We currently have `t1=10` for the VPSDE. This seems very large: can this be reduced?
-    - Check to what extent `use_wrapper` actually helps things.
-    - Check to what extent the use concat-squash layers helps things.
-    - Tweak the mixers if appropriate. (e.g. rescale the skip connections maybe?)
-- [ ] Add other datasets **and** find good hyperparameters for these.
-  - [ ] CIFAR10
-  - [ ] CelebA-HQ
-  - [ ] A non-image dataset?
-- [ ] Add evaluation metrics
-  - Probably best to (a) sample from the JAX model; (b) convert JAX array -> PyTorch tensor; (c) use [torch-fidelity](https://github.com/toshas/torch-fidelity) for these evaluations.
-  - [ ] FID
-  - [ ] KID
-  - [ ] Inception score
