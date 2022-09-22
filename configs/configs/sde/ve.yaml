@@ -1,0 +1,5 @@
+# @package _global_
+
+sde_name: ve
+t1: 1
+weight_func: sigma(t)**2

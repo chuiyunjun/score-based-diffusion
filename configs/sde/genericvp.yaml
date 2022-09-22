@@ -1,0 +1,5 @@
+# @package _global_
+
+sde_name: generic
+t1: 10
+weight_func: 1-jnp.exp(-int_beta(t))

@@ -1,0 +1,6 @@
+# @package _global_
+
+model_name: mlp
+model_kwargs:
+  width_size: ???
+  depth: ???

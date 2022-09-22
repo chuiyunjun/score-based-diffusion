@@ -1,0 +1,10 @@
+# @package _global_
+
+training_regimes:
+  A:  # DSM
+    num_steps: 1_000
+  B:  # CNF
+    num_steps: 100
+print_every: 10
+plot_every: 100
+save_every: 10

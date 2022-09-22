@@ -1,0 +1,9 @@
+# @package _global_
+
+training_regimes:
+  A:
+    num_steps: 10_000
+print_every: 1_000
+plot_every: 1_000
+save_every: 1_000
+calc_metrics_every: 100_000

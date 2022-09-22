@@ -1,0 +1,22 @@
+# @package _global_
+
+training_regimes:
+  A:
+    mode: dsm
+    num_steps: ???
+    optim_name: adabelief
+    lr: 3e-4
+    lr_scale: 0.1
+    batch_size: 256
+    train_kwargs:  # empty
+  B:
+    mode: cnf
+    num_steps: ???
+    optim_name: adam
+    lr: 5e-5
+    lr_scale: 1
+    batch_size: 500
+    train_kwargs:
+      dt0: 0.05
+      divergence_name: hutchinson
+      divergence_num: 1

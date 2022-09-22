@@ -1,0 +1,7 @@
+# @package _global_
+
+dataset_name: mnist
+sample_size: 100
+
+# num_steps: 100
+# print_every: 10

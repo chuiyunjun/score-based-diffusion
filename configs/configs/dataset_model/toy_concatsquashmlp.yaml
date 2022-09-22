@@ -1,0 +1,5 @@
+# @package _global_
+
+model_kwargs:
+  width_size: 64
+  depth: 3

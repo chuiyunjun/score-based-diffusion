@@ -1,0 +1,5 @@
+# @package _global_
+
+dataset_name: cifar10
+sample_size: 100
+metrics_sample_size: 1000

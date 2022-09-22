@@ -1,0 +1,8 @@
+# @package _global_
+
+model_kwargs:
+  patch_size: 4
+  hidden_size: 64
+  mix_patch_size: 512
+  mix_hidden_size: 512
+  num_blocks: 4

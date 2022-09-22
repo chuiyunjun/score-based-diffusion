@@ -1,0 +1,7 @@
+**/__pycache__
+data
+outputs
+results
+
+configs/wandb_config/
+checkpoint/

@@ -1,0 +1,10 @@
+# @package _global_
+
+model_kwargs:
+  dim_mults: [1, 2, 4]
+  hidden_size: 64
+  heads: 4
+  dim_head: 32
+  dropout_rate: 0.
+  num_res_blocks: 2
+  attn_resolutions: [16,]

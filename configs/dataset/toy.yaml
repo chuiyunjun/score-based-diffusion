@@ -1,0 +1,4 @@
+# @package _global_
+
+dataset_name: toy
+sample_size: 10_000

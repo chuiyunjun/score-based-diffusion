@@ -1,0 +1,9 @@
+# @package _global_
+
+model_name: mixer2d
+model_kwargs:
+  patch_size: ???
+  hidden_size: ???
+  mix_patch_size: ???
+  mix_hidden_size: ???
+  num_blocks: ???

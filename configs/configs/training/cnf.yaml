@@ -1,0 +1,14 @@
+# @package _global_
+
+training_regimes:
+  A:
+    mode: cnf
+    num_steps: ???
+    optim_name: adam
+    lr: 1e-3
+    lr_scale: 1
+    batch_size: 1000
+    train_kwargs:
+      dt0: 0.05
+      divergence_name: hutchinson
+      divergence_num: 1

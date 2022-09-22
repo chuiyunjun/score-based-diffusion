@@ -1,0 +1,11 @@
+# @package _global_
+
+model_name: unet
+model_kwargs:
+  dim_mults: ???
+  hidden_size: ???
+  heads: ???
+  dim_head: ???
+  dropout_rate: ???
+  num_res_blocks: ???
+  attn_resolutions: ???

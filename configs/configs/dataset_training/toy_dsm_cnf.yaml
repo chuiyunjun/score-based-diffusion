@@ -1,0 +1,13 @@
+# @package _global_
+
+training_regimes:
+  A:
+    num_steps: 10_000
+  B:
+    num_steps: 10_000
+    train_kwargs:
+      trace_name: exact
+      trace_num: null
+print_every: 1_000
+plot_every: 1_000
+save_every: 1_000

@@ -1,0 +1,51 @@
+defaults:
+  - _self_
+  - dataset: ???
+  - model: ???
+  - sde: ???
+  - training: ???
+  - dataset_model: ${dataset}_${model}
+  - dataset_training: ${dataset}_${training}
+  - wandb_config: base_wandb
+
+# SDE
+sde_name: ???
+t1: ???
+weight_func: ???
+
+# Neural network
+model_name: ???
+model_kwargs: ???
+use_wrapper: true
+
+# Optimisation
+dataset_name: ???
+print_every: ???
+plot_every: ???
+save_every: ???
+training_regimes: ???
+
+# Sampling
+dt0: 0.01
+sample_size: ???
+metrics_sample_size: ???
+calc_metrics_every: ???
+
+# Misc
+seed: 5678
+restart: false
+parallel: false
+
+hydra:
+  run:
+    dir: ./outputs/${hydra.job.override_dirname},seed=${seed}
+  job:
+    config:
+      override_dirname:
+        exclude_keys:
+          - print_every
+          - plot_every
+          - save_every
+          - seed
+          - parallel
+          - restart
